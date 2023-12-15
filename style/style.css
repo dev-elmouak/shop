@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+header{
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1{
+  color: #a449ff;
+}
+header ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  width: fit-content;
+  font-size: 18px;
+}
+header ul li a{
+  color: #171717;
+}
+.cart{
+  position: relative;
+}
+.cart .number-p{
+  width: 25px;
+  height: 25px;
+  background: red;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
