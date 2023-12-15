@@ -1,4 +1,4 @@
-let product = [{
+export let product = [{
   img: "/img/vecteezy_isolated-black-t-shirt-white-hanger_8847294.png",
   name: "Black shirt",
   price: "99Dh"

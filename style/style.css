@@ -17,6 +17,10 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
 }
 header h1{
   color: #a449ff;
@@ -32,19 +36,109 @@ header ul li a{
   color: #171717;
 }
 .cart{
-  position: relative;
-}
-.cart .number-p{
-  width: 25px;
-  height: 25px;
-  background: red;
-  border: 3px solid white;
-  border-radius: 50%;
-  position: absolute;
-  top: -13px;
-  right: -13px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  background: #a449ff;
+  padding: 5px 10px;
+  border-radius: 10px;
   color: white;
+}
+.cart .number-p{
+  width: fit-content;
+  padding: 0 20px;
+  height: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car-search{
+  width: 100%;
+  height: fit-content;
+  background: white;
+  margin-top: 70px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car-search div{
+  flex-grow: 1;
+  max-width: 760px;
+  padding: 0 10px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px;
+  background: white;
+}
+.car-search div input{
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 10px;
+}
+.products{
+  max-width: 760px;
+  height: fit-content;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.products .card-product{
+  width: 250px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.card-product div{
+  width: 100%;
+}
+.card-product div img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.card-product div:nth-child(1){
+  height: 70%;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-product div:nth-child(2){
+  padding: 10px;
+  height: fit-content;
+  color: #a449ff;
+  font-size: 19px;
+}
+.card-product div:nth-child(3){
+  padding: 5px 10px;
+  height: fit-content;
+  font-size: 19px;
+}
+.card-product button{
+  padding: 10px;
+  width: 100%;
+  background: #a449ff;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 19px;
 }
