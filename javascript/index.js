@@ -9,7 +9,7 @@ for (let i = 0; i < product.length; i++) {
       </div>
       <div class="name-product">${product[i].name}</div>
       <div class="price-dh">${product[i].price}</div>
-      <button>bay</button>
+      <button class="btnBay" onclick="clickbay(i)">bay</button>
     </div>
   `
 }
